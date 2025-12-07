@@ -17,11 +17,13 @@ class VehicalCar {
     }
 }
 class CarNew extends VehicalCar{
+    @Override
     void start(){
         System.out.println("Car Start with Key");
     }
 }
 class Bike extends VehicalCar{
+    @Override
     void start(){
         System.out.println("Bike starts with self-start button.");
     }
@@ -37,6 +39,8 @@ public class PolyMorphism {
         System.out.println();
         //Method Overriding
         VehicalCar v;
+        v = new VehicalCar();
+        v.start();
         v = new CarNew();
         v.start();
         v = new Bike();
