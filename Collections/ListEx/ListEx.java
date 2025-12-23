@@ -6,7 +6,7 @@ import java.util.HashSet;
 
 public class ListEx {
     public static void main(String[] args) {
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<Integer>();
         al.add(21);
         al.add(43);
         al.add(42);
@@ -21,7 +21,7 @@ public class ListEx {
         hset.add(42);
         System.out.println(hset);
 
-        HashMap hmap = new HashMap();
+        HashMap<Integer, String> hmap = new HashMap<Integer, String>();
         hmap.put(1,"Ganesh");
         hmap.put(2,"Sanket");
         hmap.put(3,"Mangesh");
