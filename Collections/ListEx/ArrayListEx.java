@@ -32,5 +32,7 @@ public class ArrayListEx {
         System.out.println("\n");
         Collections.sort(name);
         System.out.println(name);
+        Collections.sort(name, Collections.reverseOrder());
+        System.out.println(name);
     }
 }
