@@ -1,9 +1,9 @@
 class Employee{
-    void salary(){
+    void salarye(){
         System.out.println("Salary = 70000");
     }
 }
-class Hr extends  Employee{
+class Hr extends EmployeeOne {
     void bonus(){
         System.out.println("Bonus = 20000");
     }
@@ -11,7 +11,7 @@ class Hr extends  Employee{
 public class SingleInher {
     public static void main(String[] args) {
         Hr h = new Hr();
-        h.salary();
+//        h.salarye();
         h.bonus();
     }
 }
