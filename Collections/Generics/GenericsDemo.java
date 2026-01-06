@@ -14,5 +14,8 @@ public class GenericsDemo {
         MyBox<String> stringBox = new MyBox<>();
         stringBox.add("Mera Secret Message");
         System.out.println("Message : " + stringBox.get());
+        MyBox<Integer> numberBox = new MyBox<>();
+        numberBox.add(300);
+        System.out.println("\nNumber : " + numberBox.get());
     }
 }
