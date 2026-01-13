@@ -1,14 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class PassGen {
+public class PassGen2 {
     public static void main(String[] args) {
-        String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        String lower = "abcdefghijklmnopqrstuvwxyz";
-        String num = "1234567890";
-        String specialChar = "<,.>/;':[]{}=-`~|!@#$%^&*()_+";
+        String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
 
-        String combination = upper + lower + num + specialChar;
+//        String combination = upper + lower + num + specialChar;
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter Password Length : ");
@@ -18,7 +15,7 @@ public class PassGen {
         Random r = new Random();
 
         for (int i=0; i < len; i++){
-            password[i] = combination.charAt(r.nextInt(combination.length()));
+            password[i] = chars.charAt(r.nextInt(chars.length()));
         }
         System.out.println("Generated Password " + new String(password));
     }
